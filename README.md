@@ -8,7 +8,7 @@ One display page with js for animation
 Pages:
 Main pages
 1. Home page. Main page for the website, with links to every other <!---    TODO: Content box of notices, Replace placeholder video bg and images, flavor text>
-2. About Page. Current description and information to display <!--- TODO: Create area for info texts, informations, and displays>
+2. About Page. Current description and information to display <!--- TODO:  Create area for info texts, informations, and displays>
 3. Display Page. Page that shows some examples of activities or events held so far/ in the future <!--TODO: Replace boing boings with actual images/gifs>
 4. History Page. (hidden but linked to About) Page to display some history or story <!-- TODO: Align text, add flavor text, add some images>
 Services Page:

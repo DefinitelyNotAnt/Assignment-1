@@ -1,25 +1,33 @@
+/* Making a fake loader while background images load */
 .ring
 {
+  /* Positioning to center */
   position:absolute;
   top:50%;
   left:50%;
   transform:translate(-50%,-50%);
+  /* Dimensions of loader */
   width:150px;
   height:150px;
   background:transparent;
-  border:3px solid #3c3c3c;
+  /* loader color 1 */
+  border:3px solid #ff0000; 
   border-radius:50%;
   text-align:center;
   line-height:150px;
   font-family:sans-serif;
   font-size:20px;
-  color:#fff000;
+  /* loader color 2 */
+  color:#fff000; 
   letter-spacing:4px;
   text-transform:uppercase;
-  text-shadow:0 0 10px #fff000;
+  /* Text glow */
+  text-shadow:0 0 10px #fff000; 
   box-shadow:0 0 20px rgba(0,0,0,.5);
-  z-index: -1;
+  /* Positions behind everything */
+  z-index: -5; 
 }
+/* Starting state of loader */
 .ring:before
 {
   content:'';
@@ -34,10 +42,12 @@
   border-radius:50%;
   animation:animateC 2s linear infinite;
 }
-span
+/* Dot inside loader */
+.ring>span
 {
   display:block;
   position:absolute;
+  /* To follow the border (loading) movement */
   top:calc(50% - 2px);
   left:50%;
   width:50%;
@@ -46,18 +56,22 @@ span
   transform-origin:left;
   animation:animate 2s linear infinite;
 }
-span:before
+/* Starting state of dot */
+.ring>span:before
 {
   content:'';
   position:absolute;
   width:16px;
   height:16px;
   border-radius:50%;
+  /* Dot color */
   background:#fff000;
   top:-6px;
   right:-8px;
+  /* Dot glow */
   box-shadow:0 0 20px #fff000;
 }
+/* Loading animation */
 @keyframes animateC
 {
   0%
@@ -80,6 +94,7 @@ span:before
     transform:rotate(405deg);
   }
 }
+/* Video bg */
 video{
     object-fit: contain;
     overflow-clip-margin: content-box;
@@ -89,10 +104,12 @@ video{
     position: fixed;
     right: 0;
     bottom: 0;
+    z-index: -1;
 }
 body{
     background-color: rgb(0, 0, 0);
 }
+/* Nav bar */
 iframe{
     position: fixed;
     left: -10px;
@@ -101,6 +118,7 @@ iframe{
     height: 75px;
     background: rgba(0,0,0,0.3)
 }
+/* For PC/laptop view */
 html.layoutPC #wrap {
     width: 100%;
     height: 100%;
@@ -110,8 +128,73 @@ html.layoutPC #wrap {
     min-height: 1000px;
     max-width: 2560px;
 }
-#tavface{
-    align-self: flex-start;
-    position: relative;
-    float: right;
+
+h1{
+  position: relative;
+  top: 25rem;
+  font-size: 5vw;
+  color: gray;
+}
+h2{
+  position: relative;
+  top: 26rem;
+  font-size: 3.5vw;
+  color: #f1f1f1;
+}
+/* Test */
+/* Slideshow container */
+.slideshow-container {
+  max-width: 250px;
+  height:250px;
+  max-height: 250px;
+  position: relative;
+  bottom: 25%;
+  left:75%;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #545454;
+  font-size: 18px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: -75px;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  position:relative;
+  left:33.5%;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  transform: translate(-25%,-50%);
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+/* Image filling */
+.imgref{
+  object-fit: cover;
+  overflow:auto;
+  object-position: 0 0 ;
+  height: 250px;
 }
