@@ -1,0 +1,35 @@
+/* NAVBAR CSS + whitespace */
+.whitespace {
+    height: 7vh;
+    top: 0%;
+}
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 5vh;
+    background-color: #b50b0a;
+    align-content: center;
+    padding: 10px;
+    position: fixed;
+    top: 0%;
+    flex-direction: row;
+}
+.navbar > .navbarelement1, .navbarelement2 {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 70px;
+    background-color: #724cc8;
+    border-radius: 10px;
+    margin-left: 5vw;
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding:5px;
+}
+/* .navbarelement1 {
+}
+.navbarelement2 {
+} */
