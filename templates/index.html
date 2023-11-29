@@ -1,29 +1,62 @@
 <!DOCTYPE html>
 <html id="htmlmain">
     <head>
-        <div id="navcheck">Home</div>
         <meta charset="utf-8">
         <title>Idol Tav</title>
         <meta name="description" content="A page about Idol Tav">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/index.css">
         <script src="../scripts/layout.js"></script>
     </head>
     <body>
+        <!-- Creating navbar using js -->
+        <script src="../scripts/nav.js" id="replace_with_navbar"></script>
         <!-- Making layout of grid -->
-        <article class="gridcontainer">
-            <!-- Creating navbar using js -->
-            <script src="../scripts/nav.js" id="replace_with_navbar"></script>
-            <!-- Insert background clip here -->
-            <!-- Header -->
-            <h1>Text</h1>
-            <!-- Subtext -->
-            <h2>Subtext below header</h2>
-            <!-- Creating two carousels -->
+        <article class="grid-container">
+            <main class="main-side grid-item">
+                <h2>Welcome to the world of</h2>
+                <h1>Idol Tav</h1>
+            </main>
+            <section class="carousel-1 grid-item">
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                      <a href="../media/DotForHer.png">
+                        <img src="../media/DotForHer.png" style="width:100%" class="imgref">
+                      </a>
+                    </div>
+        
+                    <div class="mySlides fade">
+                      <div class="numbertext">2 / 3</div>
+                      <a href="../media/A4Tav.png">
+                        <img src="../media/A4Tav.png" style="width:100%" class="imgref">
+                      </a>
+                    </div>
+        
+                    <div class="mySlides fade">
+                      <div class="numbertext">3 / 3</div>
+                      <a href="../media/boing_boing.gif">
+                        <img src="../media/boing_boing.gif" style="width:100%" class="imgref">
+                      </a>
+                    </div>
+                </div>
+                <div style="text-align:center">
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                </div>
+                <script src="../scripts/home.js"></script>
+            </section>
+            <section class="notice grid-item">
+                <img src="../media/DotForHer.png" draggable="false">
+            </section>
+            <!-- Footer for below text (Sponsors, etc) -->
+            <footer class="foot grid-item">
+                Brought to you by
+                <img src="../media/AntPremiumLowQ.png">
+                <img src="../media/OnlyPans.png">
+            </footer>
         </article>
     </body>
-    <!-- Footer for below text (Sponsors, etc) -->
-    <footer>
-        <p class="sidetext">Brought to you by: </p>
-    </footer>
+    
 </html>

@@ -7,7 +7,3 @@ fetch('nav.html')
     newelem.innerHTML = text;
     oldelem.parentNode.replaceChild(newelem,oldelem);
 })
-// Creating active
-console.log(window.location.href);
-const test1 = document.getElementsByClassName("navitem");
-console.log(test1.item(0));

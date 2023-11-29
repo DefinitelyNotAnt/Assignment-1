@@ -2,27 +2,31 @@
 <html id="htmlmain">
     <head>
         <meta charset="utf-8">
-        <title>Idol Tav</title>
-        <meta name="description" content="A page about Idol Tav">
+        <title>Contact Us</title>
+        <meta name="description" content="Social media links related to Idol Tav">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../styles/style.css">
-        <script src="../scripts/layout.js"></script>
+        <link rel="stylesheet" href="../styles/ticketing.css">
+        <script async src="../scripts/layout.js"></script>
     </head>
     <body>
-        <!-- Making layout of grid -->
-        <article class="gridcontainer">
-            <!-- Creating navbar using js -->
-            <script src="../scripts/nav.js" id="replace_with_navbar"></script>
-            <!-- Insert background clip here -->
-            <!-- Header -->
-            <h1>Text</h1>
-            <!-- Subtext -->
-            <h2>Subtext below header</h2>
-            <!-- Creating two carousels -->
-        </article>
+         <!-- Creating navbar using js -->
+         <script src="../scripts/nav.js" id="replace_with_navbar"></script>
+         <h1>Events</h1>
+        <!-- Making sliding track -->
+        <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
+            <img class="image" src="../media/boing_boing.gif" draggable="false">
+            <img class="image" src="../media/DotForHer.png" draggable="false">
+            <img class="image" src="../media/Tavoru.png" draggable="false">
+            <img class="image" src="../media/DotForHer.png" draggable="false">
+            <img class="image" src="../media/A4Tav.png" draggable="false">
+            <img class="image" src="../media/DotForHer.png" draggable="false">
+            <img class="image" src="../media/Raid_End_Jahn.png" draggable="false">
+            <img class="image" src="../media/DotForHer.png" draggable="false">
+        </div>
+        <script src="../scripts/imagetrack.js"></script>
+        <button class="goPay">
+            <a href="payment.html">BOOK NOW</a>
+        </button>
     </body>
-    <!-- Footer for below text (Sponsors, etc) -->
-    <footer>
-        <p class="sidetext">Brought to you by: </p>
-    </footer>
 </html>

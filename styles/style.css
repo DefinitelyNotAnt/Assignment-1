@@ -1,35 +1,112 @@
 /* NAVBAR CSS + whitespace */
-.whitespace {
+.layoutMobile .whitespace {
     height: 7vh;
     top: 0%;
 }
+/* Setting up shared properties */
 .navbar {
     display: flex;
     flex-wrap: wrap;
-    width: 100vw;
-    height: 5vh;
-    background-color: #b50b0a;
+    background-color: #001011;
     align-content: center;
     padding: 10px;
     position: fixed;
-    top: 0%;
-    flex-direction: row;
+    margin-left: auto;
+    z-index: 99;
+}
+.navbar a{
+    color: #97C8EB;
+    text-decoration: none;
+    align-content: center;
+    border-bottom: 1px solid silver;
+    height: auto;
+    text-decoration: underline wavy 0.25em rgba(0,0,0,0);
+}
+.navbar a:hover{
+    text-decoration: underline wavy 0.25em #97C8EB;
+    transition: text-decoration-color 600ms;
 }
 .navbar > .navbarelement1, .navbarelement2 {
     display: flex;
     justify-content: center;
-    height: 100%;
-    width: 70px;
-    background-color: #724cc8;
     border-radius: 10px;
-    margin-left: 5vw;
 }
-.navbar a{
-    color: white;
-    text-decoration: none;
-    padding:5px;
+.grid-container{
+    animation: 300ms ease-in 0s 1 slideLeft;
 }
-/* .navbarelement1 {
+/* PC Layout */
+.layoutPC{
+    .navbar{
+        flex-direction: row;
+        top: 0%;
+        width: 100vw;
+        height: 5vh;
+        border-bottom: 1px solid silver;
+    }
+    .navbar > .navbarelement1{
+        animation: 1s ease-out 0s 1 slideLeft;
+        height: 100%;
+        width: 200px;
+    }
+    .navbarelement2{
+        animation: 1s ease-in 0s 1 slideRight;
+        margin-left: auto;
+        margin-right: 5vw;
+    }
 }
-.navbarelement2 {
-} */
+/* Mobile Layout */
+.layoutMobile{
+    .navbar{
+        animation: 1s ease-out 0s 1 slideLeft;
+        flex-direction: column;
+        left: 0%;
+        height: 100%;
+        width: max(25vw,100px);
+        top: 0;
+    }
+    .navbar > .navbarelement1{
+        animation: 1s ease-out 0s 1 slideLeft;
+        height: 10vh;
+        width: 100%;
+    }
+    .navbar > .navbarelement2{
+        height: 10vh;
+        width: 100%;
+        margin-top: auto;
+        margin-bottom: 5vw;
+    }
+    .navbar a{
+        padding: 25%;
+        font-size: min(12vh,12vw,12px);
+        vertical-align: bottom;
+    }
+}
+/* Background */
+body{
+    background-image: url(../media/TavAltarBg.jpg);
+    padding:0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+/* Creating animation on load in */
+@keyframes slideLeft{
+    0%{
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slideRight{
+    0%{
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
