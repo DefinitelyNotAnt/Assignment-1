@@ -6,23 +6,46 @@
         <meta name="description" content="Social media links related to Idol Tav">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/contacts.css">
         <script src="../scripts/layout.js"></script>
     </head>
     <body>
+        <!-- Creating navbar using js -->
+        <script src="../scripts/nav.js" id="replace_with_navbar"></script>
         <!-- Making layout of grid -->
-        <article class="gridcontainer">
-            <!-- Creating navbar using js -->
-            <script src="../scripts/nav.js" id="replace_with_navbar"></script>
-            <!-- Insert background clip here -->
-            <!-- Header -->
-            <h1>Text</h1>
-            <!-- Subtext -->
-            <h2>Subtext below header</h2>
-            <!-- Creating two carousels -->
+        <article class="container">
+            <section class="flex-item whatsapp">
+                <a href="https://www.whatsapp.com/"  draggable="false">
+                    <img src="../media/whatsapp.png" class="socialIcon" draggable="false">
+                    <h1>WHATSAPP</h1>
+                    <p>Whatsapp us or call us at 69426942! Feedback, questions and services!</p>
+                    <div class="sLink">69426942</div>
+                </a>
+            </section>
+            <section class="flex-item discord">
+                <a href="https://discord.gg/Fakelink" draggable="false">
+                    <img src="../media/discord.png" class="socialIcon"  draggable="false">
+                    <h1>DISCORD</h1>
+                    <p>Join our discord @ the Tavern! A great place to interact with our community and have first access to recent made covers.</p>
+                    <div class="sLink">The Tavern</div>
+                </a>
+            </section>
+            <section class="flex-item telegram">
+                <a href="https://t.me/DefinitelyAFakeLink"  draggable="false">
+                    <img src="../media/telegram.png" class="socialIcon" draggable="false">
+                    <h1>TELEGRAM</h1>
+                    <p>Come to our telegram group! For those poor unfortunate souls that can only use telegram...</p>
+                    <div class="sLink">Idol Tav Simps</div>
+                </a>
+            </section>
+            <section class="flex-item email">
+                <a href="https://gmail.com" draggable="false">
+                    <img src="../media/gmail.png" class="socialIcon" draggable="false">
+                    <h1>GMAIL</h1>
+                    <p>Send us any feedback at our email, or any misc. things! Just don't give those spam mails and we're good :)</p>
+                    <div class="sLink">DefinitelyNotAnt@NotAnt.corn</div>
+                </a>
+            </section>
         </article>
     </body>
-    <!-- Footer for below text (Sponsors, etc) -->
-    <footer>
-        <p class="sidetext">Brought to you by: </p>
-    </footer>
 </html>

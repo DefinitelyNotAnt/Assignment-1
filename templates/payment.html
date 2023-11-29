@@ -51,7 +51,7 @@
             <form action="">
                 <div class="inputBox">
                     <span>Event select</span>
-                    <select name="" id="" class="event-input">
+                    <select name="" id="" class="event-input" required>
                         <option value=0 selected disabled>Event select</option>
                         <option value=20>Tav toilet cover          (30/11)  $20</option>
                         <option value=12>Tav raid cover            (08/12)  $12</option>
@@ -62,7 +62,7 @@
                 </div>
                 <div class="inputBox">
                     <span>Ticket number (Up to 5 at a time)</span>
-                    <select name="" id="" class="amount-input">
+                    <select name="" id="" class="ticket-input" required>
                         <option value=0 selected disabled>Event select</option>
                         <option value=1>1 ticket</option>
                         <option value=2>2 tickets</option>
@@ -75,17 +75,21 @@
                 <label>Payment amount: $</label>
                 <label class="payment-amount">0</label>
                 <div class="inputBox">
+                    <span>email</span>
+                    <input type="email" class="email-input" required>
+                </div>
+                <div class="inputBox">
                     <span>card number</span>
-                    <input type="text" maxlength="16" class="card-number-input">
+                    <input type="text" maxlength="16" class="card-number-input" required>
                 </div>
                 <div class="inputBox">
                     <span>card holder</span>
-                    <input type="text" maxlength="30"class="card-holder-input">
+                    <input type="text" maxlength="30"class="card-holder-input" required>
                 </div>
                 <div class="flexbox">
                     <div class="inputBox">
                         <span>expiration mm</span>
-                        <select name="" id="" class="month-input">
+                        <select name="" id="" class="month-input" required>
                             <option value="month" selected disabled>month</option>
                             <option value="01">01</option>
                             <option value="02">02</option>
@@ -103,7 +107,7 @@
                     </div>
                     <div class="inputBox">
                         <span>expiration yy</span>
-                        <select name="" id="" class="year-input">
+                        <select name="" id="" class="year-input" required>
                             <option value="year" selected disabled>year</option>
                             <option value="2021">2021</option>
                             <option value="2022">2022</option>
@@ -119,10 +123,10 @@
                     </div>
                     <div class="inputBox">
                         <span>cvv</span>
-                        <input type="text" maxlength="4" class="cvv-input">
+                        <input type="text" maxlength="4" class="cvv-input" required>
                     </div>
                 </div>
-                <input type="submit" value="submit" class="submit-btn">
+                <input type="submit" value="submit" class="submit-btn" onclick="alertPopup()">
             </form>
         <script src="../scripts/form.js"></script>
         </div>    

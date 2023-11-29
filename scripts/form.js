@@ -1,3 +1,8 @@
+/* ------------------------------ */
+/* ----------Credit Card--------- */
+/* ------------------------------ */
+/* Edits details on input */
+
 document.querySelector('.card-number-input').oninput = () =>{
     document.querySelector('.card-number-box').innerText = document.querySelector('.card-number-input').value;
 }
@@ -29,5 +34,23 @@ document.querySelector('.cvv-input').oninput = () =>{
 }
 
 document.querySelector('.event-input').oninput = () =>{
-    document.querySelector('.payment-amount').innerText = document.querySelector('.event-input').value*document.querySelector('amount-input').value;
+    document.querySelector('.payment-amount').innerText = document.querySelector('.event-input').value*document.querySelector('.ticket-input').value;
+}
+
+document.querySelector('.ticket-input').oninput = () =>{
+    document.querySelector('.payment-amount').innerText = document.querySelector('.event-input').value*document.querySelector('.ticket-input').value;
+}
+/* ------------------------------ */
+/* ---------Submit Popup--------- */
+/* ------------------------------ */
+/* Popup on submit */
+function alertPopup() {
+    if (confirm("You are about to proceed with a payment of $"+document.querySelector('.event-input').value*document.querySelector('.ticket-input').value+". Proceed?")) {
+        if ((document.querySelector('.event-input').value*document.querySelector('.ticket-input').value)==0){
+            alert("You bought absolutely nothing. Congrats!");
+        }
+        else{
+            alert("Payment success! The ticket details have been emailed to you at "+document.querySelector('.email-input').value+".");
+        }
+    }
 }

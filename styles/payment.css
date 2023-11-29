@@ -6,6 +6,9 @@
     text-decoration: none;
     text-transform: uppercase;
 }
+/* ------------------------------ */
+/* ---------Credit Card---------- */
+/* ------------------------------ */
 /* Pain and suffering */
 .container{
     min-height: 100vh;
@@ -165,4 +168,17 @@
 .container .card-container .back .box img{
     margin-top: 30px;
     height: 30px;
+}
+.layoutMobile .container{
+    position: relative;
+    left: 200px;
+}
+
+.layoutMobile .container form{
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 10px 15px rgba(0,0,0,.1);
+    padding: 20px;
+    width: 600px;
+    padding-top: 200px;
 }

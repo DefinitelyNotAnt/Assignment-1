@@ -1,0 +1,59 @@
+/* ---------------------------------------- */
+/* ---------------Making grid-------------- */
+/* ---------------------------------------- */
+.container{
+    
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+.container .flex-item{
+    text-align: center;
+    flex-grow: 1;
+    background-image: linear-gradient(to bottom right, red, yellow);
+    border-radius: 25px;
+    border: 3px solid white;
+    max-width: 350px;
+}
+.container a{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: black;
+}
+.socialIcon{
+    height: 100px;
+    width: 100px;
+    align-self: center;
+}
+h1{
+    font-size: 3em;
+}
+.flex-item p{
+    height: 100px;
+    width: 80%;
+    align-self: center;
+}
+.container p{
+    color: darkblue;
+}
+.container .flex-item .sLink{
+    color: rgb(181, 0, 0);
+    font-size: 1.5em;
+}
+.layoutPC .container{
+    flex-direction: row;
+    top: 200px;
+    height: 500px;
+}
+.layoutMobile .container{
+    flex-direction: column;
+    left: 220px;
+    width: 400px;
+}
