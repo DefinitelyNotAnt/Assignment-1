@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html id="htmlmain">
+<html id="htmlmain" lang="en">
     <head>
         <meta charset="utf-8">
         <title>Idol Tav</title>
@@ -10,37 +10,50 @@
         <script src="../scripts/layout.js"></script>
     </head>
     <body>
-        <!-- Creating navbar using js -->
-        <script src="../scripts/nav.js" id="replace_with_navbar"></script>
+      <div id="trailer"></div>
+        <!-- Creating navbar -->
+        <link rel="stylesheet" href="../styles/normalize.css">
+        <link rel="stylesheet" href="../styles/mousetrailer.css">
+        <div class="navbar" id="navbar">
+            <div class="navbarelement1 navitem"><a href="index.html" class="linker" draggable="false">Home</a></div>
+            <div class="navbarelement1 navitem"><a href="ticketing.html" class="linker" draggable="false">Ticketing</a></div>
+            <div class="navbarelement1 navitem"><a href="about.html" class="linker" draggable="false">About</a></div>
+            <div class="navbarelement1 navitem"><a href="events.html" class="linker" draggable="false">Events</a></div>
+            <div class="navbarelement2 navitem"><a href="contacts.html" class="linker" draggable="false">Contacts</a></div>
+        </div>
+        <script src="../scripts/trailCreate.js"></script>
         <!-- Making layout of grid -->
         <article class="grid-container">
-            <main class="main-side grid-item">
-                <h2>Welcome to the world of</h2>
-                <h1>Idol Tav</h1>
-            </main>
+          <h2 hidden>Yes</h2>
+            <section class="main-side grid-item">
+              <h2>Welcome to the world of</h2>
+              <h3>Idol Tav</h3>
+            </section>
+            <!-- First Item -->
             <section class="carousel-1 grid-item">
-                <div class="slideshow-container">
-                    <div class="mySlides fade">
-                      <a href="../media/DotForHer.png">
-                        <img src="../media/DotForHer.png" style="width:100%" class="imgref">
-                      </a>
-                    </div>
-        
-                    <div class="mySlides fade">
-                      <div class="numbertext">2 / 3</div>
-                      <a href="../media/A4Tav.png">
-                        <img src="../media/A4Tav.png" style="width:100%" class="imgref">
-                      </a>
-                    </div>
-        
-                    <div class="mySlides fade">
-                      <div class="numbertext">3 / 3</div>
-                      <a href="../media/Tavoru.png">
-                        <img src="../media/Tavoru.png" style="width:100%" class="imgref">
-                      </a>
-                    </div>
+              <h2 hidden>Yes</h2>
+              <div class="slideshow-container">
+                <div class="mySlides fade">
+                  <a href="../media/tavernPoster.png">
+                    <img src="../media/tavernPoster.png" style="width:100%" class="imgref" draggable="false" alt="recruiting">
+                  </a>
                 </div>
-                <div style="text-align:center">
+                <!-- Second Item -->
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 3</div>
+                  <a href="../media/A4Tav.png">
+                    <img src="../media/A4Tav.png" style="width:100%" class="imgref" draggable="false" alt="idol Tav">
+                  </a>
+                </div>
+        
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 3</div>
+                  <a href="../media/Tavoru.png">
+                    <img src="../media/Tavoru.png" style="width:100%" class="imgref" draggable="false" alt="Tavoru">
+                  </a>
+                </div>
+            </div>
+            <div style="text-align:center">
                     <span class="dot"></span> 
                     <span class="dot"></span> 
                     <span class="dot"></span> 
@@ -48,15 +61,20 @@
                 <script src="../scripts/home.js"></script>
             </section>
             <section class="notice grid-item">
-                <img src="../media/DotForHer.png" draggable="false">
+              <h2 hidden>Yes</h2>
+                <img src="../media/DotForHer.png" draggable="false" alt="Do It For Her">
             </section>
             <!-- Footer for below text (Sponsors, etc) -->
             <footer class="foot grid-item">
                 Brought to you by
-                <img src="../media/AntPremiumLowQ.png">
-                <img src="../media/OnlyPans.png">
+                <img src="../media/AntPremiumLowQ.png" draggable="false" alt="AntPremium">
+                <img src="../media/OnlyPans.png" draggable="false" alt="OnlyPans">
+                <img src="../media/TavSimpsClub.png" draggable="false" alt="TavSimpsClub">
+                <img src="../media/jahnkek.png" draggable="false" alt="Jahnkek">
+                <img src="../media/iaianIndustries.png" draggable="false" alt="IaianIndustries">
+                <img src="../media/bronion.png" draggable="false" alt="Bronion">
             </footer>
         </article>
+        <script src="../scripts/mousetrailer.js"></script>
     </body>
-    
 </html>

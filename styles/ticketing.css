@@ -32,7 +32,7 @@ h1{
     object-position: 100% center;
 }
 /* Button */
-button{
+.goPay{
     position: absolute;
     bottom: 2vh;
     left: 50%;
@@ -43,11 +43,18 @@ button{
     border-radius: 15px 15px 15px 15px;
     border: 3px solid silver;
 }
-button:hover{
+.goPay:hover{
     cursor: pointer;
 }
 .goPay{
     color: silver;
     text-decoration: none;
-    font-size: max(16px,1vw)
-}   
+    font-size: max(16px,1vw);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}  
+.goPay:hover{
+    cursor: none;
+}

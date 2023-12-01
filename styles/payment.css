@@ -6,6 +6,7 @@
     text-decoration: none;
     text-transform: uppercase;
 }
+
 /* ------------------------------ */
 /* ---------Credit Card---------- */
 /* ------------------------------ */
@@ -134,7 +135,9 @@
     height: 100%;
     width: 100%;
     background-image: url("../media/DotForHer.png");
-    background-size: cover;
+    background-size: contain;
+    background-position-y: 22.5px;
+    background-position-x: -10px;
     border-radius: 5px;
     padding: 20px 0;
     text-align: right;
@@ -158,6 +161,7 @@
 .container .card-container .back .box span{
     color:#fff;
     font-size: 15px;
+    font-weight: 690;
 }
 
 .container .card-container .back .box .cvv-box{
@@ -186,4 +190,15 @@
     padding: 20px;
     width: 600px;
     padding-top: 200px;
+}
+.navbar{
+    box-sizing: initial;
+}
+
+a:hover,.goPay:hover{
+    cursor: url("../media/hovercursor.cur") 15 15, auto;
+}
+.backLogo{
+    background-color: rgba(0,0,0,0.25);
+    border-radius: 50%;
 }

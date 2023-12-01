@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html id="htmlmain">
+<html id="htmlmain" lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Contact Us</title>
+        <title>Book Here</title>
         <meta name="description" content="Social media links related to Idol Tav">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../styles/style.css">
@@ -10,23 +10,35 @@
         <script async src="../scripts/layout.js"></script>
     </head>
     <body>
-         <!-- Creating navbar using js -->
-         <script src="../scripts/nav.js" id="replace_with_navbar"></script>
-         <h1>Events</h1>
+        <div id="trailer"></div>
+        <!-- Creating navbar -->
+        <link rel="stylesheet" href="../styles/normalize.css">
+        <link rel="stylesheet" href="../styles/mousetrailer.css">
+        <div class="navbar" id="navbar">
+            <div class="navbarelement1 navitem"><a href="index.html" class="linker" draggable="false">Home</a></div>
+            <div class="navbarelement1 navitem"><a href="ticketing.html" class="linker" draggable="false">Ticketing</a></div>
+            <div class="navbarelement1 navitem"><a href="about.html" class="linker" draggable="false">About</a></div>
+            <div class="navbarelement1 navitem"><a href="events.html" class="linker" draggable="false">Events</a></div>
+            <div class="navbarelement2 navitem"><a href="contacts.html" class="linker" draggable="false">Contacts</a></div>
+        </div>
+        <script src="../scripts/trailCreate.js"></script>
+         <h1>Bookings</h1>
         <!-- Making sliding track -->
-        <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
-            <img class="image" src="../media/boing_boing.gif" draggable="false">
-            <img class="image" src="../media/DotForHer.png" draggable="false">
-            <img class="image" src="../media/Tavoru.png" draggable="false">
-            <img class="image" src="../media/sacabamtavpis.gif" draggable="false">
-            <img class="image" src="../media/A4Tav.png" draggable="false">
-            <img class="image" src="../media/DotForHer.png" draggable="false">
-            <img class="image" src="../media/Raid_End_Jahn.png" draggable="false">
-            <img class="image" src="../media/sacabamtavpis.gif" draggable="false">
+        <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0" draggable="false">
+            <img class="image" src="../media/boing_boing.gif" alt="boing boing" draggable="false">
+            <img class="image" src="../media/DotForHer.png" alt="DotForHer" draggable="false">
+            <img class="image" src="../media/Tavoru.png" alt="Tavoru" draggable="false">
+            <img class="image" src="../media/sacabamtavpis.gif" alt="sacabamtavpis" draggable="false">
+            <img class="image" src="../media/A4Tav.png" alt="A4Tav" draggable="false">
+            <img class="image" src="../media/Tavha.png" alt="Tavha" draggable="false">
+            <img class="image" src="../media/Raid_End_Jahn.png" alt="Raid_End_Jahn" draggable="false">
+            <img class="image" src="../media/Tavern_2nd_Anniversary_Canvas_v3.png" alt="2ndAnniv" draggable="false">
+            <img class="image" src="../media/TavRedacted.png" alt="Yes" draggable="false">
         </div>
         <script src="../scripts/imagetrack.js"></script>
-        <button class="goPay">
-            <a href="payment.html">BOOK NOW</a>
-        </button>
+        <a href="payment.html" class="goPay">
+            BOOK NOW
+        </a>
+    <script src="../scripts/mousetrailer.js"></script>
     </body>
 </html>

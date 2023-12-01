@@ -33,7 +33,7 @@
     align-items: flex-start;
     flex-direction: column;
 }
-.main-side h1{
+.main-side h3{
     color: #001011;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     position: relative;
@@ -142,14 +142,13 @@ body .grid-container > .foot{
     animation-name: fade;
     animation-duration: 1.5s;
 }
-  
+
 @keyframes fade {
     from {opacity: .4} 
     to {opacity: 1}
 }
 /* Image filling */
 .imgref{
-    transform: translateX(-50%,-50%);
     object-fit: scale-down;
     overflow:auto;
     height: 250px;

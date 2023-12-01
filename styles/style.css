@@ -13,6 +13,7 @@
     position: fixed;
     margin-left: auto;
     z-index: 99;
+    text-transform: uppercase;
 }
 .navbar a{
     color: #97C8EB;
@@ -46,7 +47,7 @@
     .navbar > .navbarelement1{
         animation: 1s ease-out 0s 1 slideLeft;
         height: 100%;
-        width: 200px;
+        width: 150px;
     }
     .navbarelement2{
         animation: 1s ease-in 0s 1 slideRight;
@@ -120,11 +121,12 @@ body{
     left: 0;
     pointer-events: none;
     z-index: 99999999; /* so that it stays on top of all other elements */
-  }
-a:hover,.goPay:hover{
-    cursor: url("../media/hovercursor.cur") 15 15, auto;
 }
 *{
     user-select: none;
     cursor: url("../media/tavcursor.cur") 5 20, auto;
+    font-family: 'Arial', sans-serif;
+}
+a:hover,.goPay:hover{
+    cursor: url("../media/hovercursor.cur") 15 15, auto;
 }

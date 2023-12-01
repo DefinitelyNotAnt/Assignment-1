@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html id="htmlmain">
+<html id="htmlmain" lang="en">
     <head>
         <meta charset="utf-8">
         <title>Contact Us</title>
@@ -10,42 +10,55 @@
         <script src="../scripts/layout.js"></script>
     </head>
     <body>
-        <!-- Creating navbar using js -->
-        <script src="../scripts/nav.js" id="replace_with_navbar"></script>
+        <h1 hidden>Yes</h1>
+        <div id="trailer"></div>
+        <!-- Creating navbar -->
+        <link rel="stylesheet" href="../styles/normalize.css">
+        <link rel="stylesheet" href="../styles/mousetrailer.css">
+        <div class="navbar" id="navbar">
+            <div class="navbarelement1 navitem"><a href="index.html" class="linker" draggable="false">Home</a></div>
+            <div class="navbarelement1 navitem"><a href="ticketing.html" class="linker" draggable="false">Ticketing</a></div>
+            <div class="navbarelement1 navitem"><a href="about.html" class="linker" draggable="false">About</a></div>
+            <div class="navbarelement1 navitem"><a href="events.html" class="linker" draggable="false">Events</a></div>
+            <div class="navbarelement2 navitem"><a href="contacts.html" class="linker" draggable="false">Contacts</a></div>
+        </div>
+        <script src="../scripts/trailCreate.js"></script>
         <!-- Making layout of grid -->
         <article class="container">
+            <h3 hidden>yes</h3>
             <section class="flex-item whatsapp">
                 <a href="https://www.whatsapp.com/"  draggable="false">
-                    <img src="../media/whatsapp.png" class="socialIcon" draggable="false">
-                    <h1>WHATSAPP</h1>
+                    <img src="../media/whatsapp.png" class="socialIcon" draggable="false" alt="whatsapp">
+                    <h2>WHATSAPP</h2>
                     <p>Whatsapp us or call us at 69426942! Feedback, questions and services!</p>
                     <div class="sLink">69426942</div>
                 </a>
             </section>
             <section class="flex-item discord">
                 <a href="https://discord.gg/Fakelink" draggable="false">
-                    <img src="../media/discord.png" class="socialIcon"  draggable="false">
-                    <h1>DISCORD</h1>
+                    <img src="../media/discord.png" class="socialIcon"  draggable="false" alt="discord">
+                    <h2>DISCORD</h2>
                     <p>Join our discord @ the Tavern! A great place to interact with our community and have first access to recent made covers.</p>
                     <div class="sLink">The Tavern</div>
                 </a>
             </section>
             <section class="flex-item telegram">
                 <a href="https://t.me/DefinitelyAFakeLink"  draggable="false">
-                    <img src="../media/telegram.png" class="socialIcon" draggable="false">
-                    <h1>TELEGRAM</h1>
+                    <img src="../media/telegram.png" class="socialIcon" draggable="false" alt="telegram">
+                    <h2>TELEGRAM</h2>
                     <p>Come to our telegram group! For those poor unfortunate souls that can only use telegram...</p>
                     <div class="sLink">Idol Tav Simps</div>
                 </a>
             </section>
             <section class="flex-item email">
                 <a href="https://gmail.com" draggable="false">
-                    <img src="../media/gmail.png" class="socialIcon" draggable="false">
-                    <h1>GMAIL</h1>
+                    <img src="../media/gmail.png" class="socialIcon" draggable="false" alt="email">
+                    <h2>GMAIL</h2>
                     <p>Send us any feedback at our email, or any misc. things! Just don't give those spam mails and we're good :)</p>
                     <div class="sLink">DefinitelyNotAnt@NotAnt.corn</div>
                 </a>
             </section>
         </article>
+        <script src="../scripts/mousetrailer.js"></script>
     </body>
 </html>

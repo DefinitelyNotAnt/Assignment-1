@@ -1,36 +1,5 @@
 Warning: Some features are not optimised for edevices with extremely small widths or heights.
---------------------------------------------
-Concepts:
-Idol page of a character named Idol Tav
---------------------------------------------
-Main Pages: 
-Home (Index): Home page of the site.
--> Some Welcome Text <!--Done -->
--> A carousel showing some stuff <!-- Done -->
--> a notice image for flavour <!-- Done -->
--> Sponsor List at the bottom <!-- Done -->
---------------------------------------------
-Ticketing: Main service of the site.
--> Slider that shows all upcoming events <!-- Done -->
--> Form page that takes:
-    + Credit card details <!-- Done -->
-    + Event select (Dropdown select) <!-- Done -->
-    + Submit button <!-- Done --> <!-- Popup that says ticket details will be emailed (it won't) --> 
---------------------------------------------
-About: About page.
--> Some general info
-    + Fake lore
-    + Design inspirations
-    + Story process
---------------------------------------------
-Contacts: Contacts like social media
--> Social media links
-    + 4 side by side boxes (PC) linking to respective social media
-    + Icon, Media name, Flavour text, wordlink (number, email, etc)
---------------------------------------------
-REFERENCES:---------------------------------
---------------------------------------------
-No jQuery, Bootstrap or online templates was used
+
 # Idol Tav Website
 
 Idol page of a character named Idol Tav. It was done to prove a point that anyone can become an idol and have an idol website despite not actually being real.
@@ -86,7 +55,7 @@ In addition, you may also use this section to discuss plans for additional featu
 
 ## Technologies Used
 
-In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
+HTML, CSS, Javascript. Normalize.css.
 
 - This site did not use any Online Templates. This includes:
     - Bootstrap
@@ -162,6 +131,12 @@ Interactions to note:
     - "Raid_End_Jahn.png" (Thanks Iaian and Jahn)
     - "tavSimpsClub.png" (Thanks Iaian and Jahn)
     - "tavernPoster.png" (Thanks Iaian and Kira <3>)
+    - "beegTav.png" (Thanks Iaian)
+    - "bronion.png" (Thanks Iaian)
+    - "IaianIndustries.png" (Thanks Iaian)
+    - "Tavern_2nd_Anniversary_Canvas_v3.png" (Thanks Everyone who helped)
+    - "Raid_End_Jahn.png" (Thanks Jahn, Iaian)
+    - "tavernLogo.png" (Thanks EmonPH)
 - Online icons
     - Flaticon
         - "chip.png"
@@ -178,3 +153,4 @@ Interactions to note:
 
 - I received inspiration for this project from an online guild in a game, where they called a person the Idol Tav
 - Special thanks to @kirathechallenger, @nijustat, @1939293 (Iaian), @jaahn, and of course @tav8 the person herself
+- Other thanks to EmonPH https://www.youtube.com/@EmonPH for that great logo

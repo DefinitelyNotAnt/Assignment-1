@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html id="htmlmain">
+<html id="htmlmain" lang="en">
     <head>
         <meta charset="utf-8">
         <title>Payment</title>
@@ -11,8 +11,18 @@
     </head>
     <!-- Div soup -->
     <body>
-        <!-- Creating navbar using js -->
-        <script src="../scripts/nav.js" id="replace_with_navbar"></script>
+        <div id="trailer"></div>
+        <!-- Creating navbar -->
+        <link rel="stylesheet" href="../styles/normalize.css">
+        <link rel="stylesheet" href="../styles/mousetrailer.css">
+        <div class="navbar" id="navbar">
+            <div class="navbarelement1 navitem"><a href="index.html" class="linker" draggable="false">Home</a></div>
+            <div class="navbarelement1 navitem"><a href="ticketing.html" class="linker" draggable="false">Ticketing</a></div>
+            <div class="navbarelement1 navitem"><a href="about.html" class="linker" draggable="false">About</a></div>
+            <div class="navbarelement1 navitem"><a href="events.html" class="linker" draggable="false">Events</a></div>
+            <div class="navbarelement2 navitem"><a href="contacts.html" class="linker" draggable="false">Contacts</a></div>
+        </div>
+        <script src="../scripts/trailCreate.js"></script>
         <!-- Making card -->
         <div class="container">
             <div class="card-container">
@@ -20,7 +30,7 @@
                 <div class="front">
                     <div class="image">
                         <img src="../media/chip.png" alt="">
-                        <img src="../media/visa.png" alt="">
+                        <img src="../media/tavernLogo.png" class="tavicon" alt="">
                     </div>
                     <!-- Filler value -->
                     <div class="card-number-box">################</div>
@@ -38,21 +48,22 @@
                         </div>
                     </div>
                 </div>
+                <!-- Back of card -->
                 <div class="back">
                     <div class="stripe"></div>
                     <div class="box">
-                        <span>cvv</span>
+                        <span class="backText">cvv</span>
                         <div class="cvv-box"></div>
-                        <img src="../media/visa.png" alt="">
+                        <img src="../media/tavernLogo.png" alt="" class="backLogo">
                     </div>
                 </div>
             </div>
             <!-- Actual Form -->
-            <form action="">
+            <form action="ticketing.html">
                 <div class="inputBox">
                     <span>Event select</span>
-                    <select name="" id="" class="event-input" required>
-                        <option value=0 selected disabled>Event select</option>
+                    <select name="event" id="event" class="event-input" required>
+                        <option value="" selected disabled>Event select</option>
                         <option value=20>Tav toilet cover          (30/11)  $20</option>
                         <option value=12>Tav raid cover            (08/12)  $12</option>
                         <option value=10>Tav guild recruiting      (10/12)  $10</option>
@@ -62,8 +73,8 @@
                 </div>
                 <div class="inputBox">
                     <span>Ticket number (Up to 5 at a time)</span>
-                    <select name="" id="" class="ticket-input" required>
-                        <option value=0 selected disabled>Event select</option>
+                    <select name="Name" id="name" class="ticket-input" required>
+                        <option value="" selected disabled>Event select</option>
                         <option value=1>1 ticket</option>
                         <option value=2>2 tickets</option>
                         <option value=3>3 tickets</option>
@@ -84,13 +95,13 @@
                 </div>
                 <div class="inputBox">
                     <span>card holder</span>
-                    <input type="text" maxlength="30"class="card-holder-input" required>
+                    <input type="text" maxlength="30" class="card-holder-input" required>
                 </div>
                 <div class="flexbox">
                     <div class="inputBox">
                         <span>expiration mm</span>
-                        <select name="" id="" class="month-input" required>
-                            <option value="month" selected disabled>month</option>
+                        <select name="mo" id="month" class="month-input" required>
+                            <option value="" selected disabled>Month</option>
                             <option value="01">01</option>
                             <option value="02">02</option>
                             <option value="03">03</option>
@@ -107,8 +118,8 @@
                     </div>
                     <div class="inputBox">
                         <span>expiration yy</span>
-                        <select name="" id="" class="year-input" required>
-                            <option value="year" selected disabled>year</option>
+                        <select name="yr" id="year" class="year-input" required>
+                            <option value="" selected disabled>year</option>
                             <option value="2021">2021</option>
                             <option value="2022">2022</option>
                             <option value="2023">2023</option>
@@ -129,6 +140,7 @@
                 <input type="submit" value="submit" class="submit-btn" onclick="alertPopup()">
             </form>
         <script src="../scripts/form.js"></script>
-        </div>    
+        </div>
+        <script src="../scripts/mousetrailer.js"></script>
     </body>
 </html>

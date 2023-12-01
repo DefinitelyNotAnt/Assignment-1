@@ -14,7 +14,7 @@ body h1{
 .layoutMobile h1,.layoutMobile h2{
     left: max(30vw,125px);
 }
-body .main p{
+body .main .bg{
     color: #a3a3a3;
     font-size: max(1vw,1vh,12px);
     font-family: 'Courier New', Courier, monospace;
@@ -26,16 +26,100 @@ body .main p{
     user-select: none;
 }
 body .main .synopsis{
-    rotate: 10deg;
     top: 150px;
 }
 body .main .synopsis2{
-    rotate:-10deg;
     top: 350px;
     right: 40px;
     color: #e6e6e6;
 }
 .main{
+    justify-content: left;
+    font-size: max(1vw,24px);
+}
+.rightImg{
+    height: 69vh;
+    position: absolute;
+    left:70vw;
+    z-index: -1;
+}
+.layoutMobile .rightImg{
+    position: absolute;
+    bottom: 30vh;
+    height: auto;
+    left: max(50vw,125px);
+    width: 25vw;
+}
+.aboutLeft{
+    color: #ffffff;
+    position: relative;
     display: flex;
+    right: auto;
+    width: 60vw;
+    top: max(69vh,450px);
+    flex-wrap: wrap;
+}
+.layoutMobile .aboutLeft{
+    left: max(30vw,125px);
+}
+.picNCred{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    position: relative;
+    top: max(600px,min(125vh,1000px));
+    width: 15vw;
+    left: 70vw;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    transform: translateY(-100%);
+}
+.layoutMobile .picNCred{
+    left: max(50vw,125px);
+    height: 20vh;
+    top: max(600px,min(125vh,1000px));
+}
+.picNCred .refImg{
+    object-fit: scale-down;
+}
+.expo{
+    color: #a7a7a7;
+}
+.layoutMobile .expo{
+    top:max(690px,10vh);
+}
+.leftS{
+    left: 25vw;
+    top: max(400px,min(90vh,800px));
+}
+.aboutRight{
+    color: #ffffff;
+    position: relative;
+    display: flex;
+    left: 50vw;
+    width: 40vw;
+    top: max(69vh,450px);
+    flex-wrap: wrap;
+}
+.layoutMobile .aboutRight{
+    left: max(30vw,125px);
+    top: max(3vh,750px);
+}
+.layoutMobile .leftS{
+    top: max(1000px,min(80vh,250px));
+}
+.layoutMobile .expo2{
+    top:max(1000px,10vh);
+}
+
+.layoutMobile .down{
+    position: relative;
+    top:max(1000px,10vh);
+}
+.downImg{
+    top: max(400px,min(50vh,300px));
+}
+.layoutMobile .downImg{
+    top: max(1500px,min(200vh,3000px));
 }
