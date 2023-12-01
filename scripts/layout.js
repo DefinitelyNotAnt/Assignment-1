@@ -17,3 +17,4 @@ window.addEventListener("resize",function(event){
     html1.classList.remove("layoutPC");
   }
 })
+
